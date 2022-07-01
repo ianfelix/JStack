@@ -1,11 +1,11 @@
 const express = require('express');
 
+const routes = require('./routes');
+
 const app = express();
 
-app.get('/', (request, response) => {
-  response.send('Hello World!!');
-});
+app.use(express.json());
 
-app.listen(3333, () =>
-  console.log('🚀 Server is running at http://localhost:3333'),
-);
+app.use(routes);
+
+app.listen(3333, () => console.log('🚀 Server is running at http://localhost:3333'));
