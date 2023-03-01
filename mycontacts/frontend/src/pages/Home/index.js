@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import arrow from '../../assets/icons/row.svg';
 import * as S from './styles';
 
@@ -9,7 +10,7 @@ export default function Home() {
       </S.InputSearchContainer>
       <S.Header>
         <strong>3 contatos</strong>
-        <a href="/">Novo contato</a>
+        <Link to="/new">Novo contato</Link>
       </S.Header>
 
       <hr className="line" />
