@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import arrow from '../../assets/icons/row.svg';
+import edit from '../../assets/icons/edit.svg';
+import trash from '../../assets/icons/trash.svg';
 import * as S from './styles';
 
 export default function Home() {
@@ -23,7 +25,86 @@ export default function Home() {
           </button>
         </header>
 
-        {/* <Card /> */}
+        <S.Card>
+          <div className="info">
+            <div className="contact-name">
+              <strong>Ian Felix</strong>
+              <small>instagram</small>
+            </div>
+            <span>ianfelix030@gmail.com</span>
+            <span>(41) 99999-9999</span>
+          </div>
+
+          <div className="actions">
+            <a href="/edit/1">
+              <img src={edit} alt="Edit" />
+            </a>
+
+            <button type="button">
+              <img src={trash} alt="Delete" />
+            </button>
+          </div>
+        </S.Card>
+        <S.Card>
+          <div className="info">
+            <div className="contact-name">
+              <strong>Ian Felix</strong>
+              <small>instagram</small>
+            </div>
+            <span>ianfelix030@gmail.com</span>
+            <span>(41) 99999-9999</span>
+          </div>
+
+          <div className="actions">
+            <a href="/edit/1">
+              <img src={edit} alt="Edit" />
+            </a>
+
+            <button type="button">
+              <img src={trash} alt="Delete" />
+            </button>
+          </div>
+        </S.Card>
+        <S.Card>
+          <div className="info">
+            <div className="contact-name">
+              <strong>Ian Felix</strong>
+              <small>instagram</small>
+            </div>
+            <span>ianfelix030@gmail.com</span>
+            <span>(41) 99999-9999</span>
+          </div>
+
+          <div className="actions">
+            <a href="/edit/1">
+              <img src={edit} alt="Edit" />
+            </a>
+
+            <button type="button">
+              <img src={trash} alt="Delete" />
+            </button>
+          </div>
+        </S.Card>
+        <S.Card>
+          <div className="info">
+            <div className="contact-name">
+              <strong>Ian Felix</strong>
+              <small>instagram</small>
+            </div>
+            <span>ianfelix030@gmail.com</span>
+            <span>(41) 99999-9999</span>
+          </div>
+
+          <div className="actions">
+            <a href="/edit/1">
+              <img src={edit} alt="Edit" />
+            </a>
+
+            <button type="button">
+              <img src={trash} alt="Delete" />
+            </button>
+          </div>
+        </S.Card>
       </S.ListContainer>
     </S.Container>
   );
