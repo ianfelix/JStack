@@ -36,9 +36,9 @@ export default function Home() {
           </div>
 
           <div className="actions">
-            <a href="/edit/1">
+            <Link to="/edit/1">
               <img src={edit} alt="Edit" />
-            </a>
+            </Link>
 
             <button type="button">
               <img src={trash} alt="Delete" />
