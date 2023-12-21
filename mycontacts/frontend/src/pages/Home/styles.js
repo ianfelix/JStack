@@ -2,14 +2,6 @@ import styled from 'styled-components';
 
 export const Container = styled.header`
   margin-top: 32px;
-
-  .line {
-    margin: 16px 0;
-    background: #bcbcbc;
-    height: 2px;
-    opacity: 0.2;
-    border-radius: 1px;
-  }
 `;
 
 export const InputSearchContainer = styled.div`
@@ -58,21 +50,21 @@ export const Header = styled.header`
 export const ListContainer = styled.div`
   margin-top: 24px;
   margin-bottom: 8px;
-header {
-  margin-bottom: 8px;
-  .sort-button {
-    background: transparent;
-    border: none;
-    display: flex;
-    align-items: center;
+  header {
+    margin-bottom: 8px;
+    .sort-button {
+      background: transparent;
+      border: none;
+      display: flex;
+      align-items: center;
 
-    span {
-      color: ${({ theme }) => theme.colors.primary.main};
-      font-weight: bold;
-      margin-right: 8px;
+      span {
+        color: ${({ theme }) => theme.colors.primary.main};
+        font-weight: bold;
+        margin-right: 8px;
+      }
     }
   }
-}
 `;
 
 export const Card = styled.div`
