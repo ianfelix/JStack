@@ -3,14 +3,10 @@ import arrow from '../../assets/icons/row.svg';
 import edit from '../../assets/icons/edit.svg';
 import trash from '../../assets/icons/trash.svg';
 import * as S from './styles';
-import { Loader } from '../../components/Loader';
-// import { Modal } from '../../components/Modal';
 
 export default function Home() {
   return (
     <S.Container>
-      {/* <Modal danger /> */}
-      <Loader />
       <S.InputSearchContainer>
         <input type="text" placeholder="Pesquisar contato..." />
       </S.InputSearchContainer>
