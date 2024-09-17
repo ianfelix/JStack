@@ -11,6 +11,7 @@ export const Select = styled.select`
   font-size: 16px;
   outline: none;
   transition: border-color 0.2s;
+  appearance: none;
 
   &:focus {
     border-color: ${({ theme }) => theme.colors.primary.main};
