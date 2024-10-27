@@ -22,9 +22,7 @@ class ContactController {
   }
 
   async store(request, response) {
-    const {
-      name, email, phone, category_id,
-    } = request.body;
+    const { name, email, phone, category_id } = request.body;
 
     if (!name) {
       return response.status(400).json({ error: 'name is required' });
@@ -48,9 +46,7 @@ class ContactController {
 
   async update(request, response) {
     const { id } = request.params;
-    const {
-      name, email, phone, category_id,
-    } = request.body;
+    const { name, email, phone, category_id } = request.body;
 
     const contactById = await ContactsRepository.findById(id);
 
@@ -69,7 +65,10 @@ class ContactController {
     }
 
     const contact = await ContactsRepository.update(id, {
-      name, email, phone, category_id,
+      name,
+      email,
+      phone,
+      category_id,
     });
 
     response.json(contact);
